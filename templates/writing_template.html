@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing - Hanshal Goyal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="writing-styles.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="writing.html">Writing</a>
+        <a href="experience.html">Experience</a>
+    </div>
+
+    <h1>Writing</h1>
+
+    <p class="subtitle">Here are my various musings on philosophy, technology and politics.</p>
+
+    {% for post in posts %}
+    <div class="article">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="date">{{ post.date.strftime('%B %d, %Y') }}</p>
+    </div>
+    {% endfor %}
+</body>
+</html>

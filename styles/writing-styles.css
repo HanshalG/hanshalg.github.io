@@ -1,0 +1,90 @@
+.subtitle {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+    font-size: 1em;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.subtitle::after {
+    content: '';
+    display: block;
+    width: 175%;
+    height: 1px;
+    background-color: #666;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.article {
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.article h2 {
+    font-size: 1.6em;
+    margin-bottom: 2px;
+    font-weight: normal;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+.article h2 a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+.article h2 a:hover {
+    color: #c80000;
+}
+.article .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.icon {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.nav {
+    margin-top: 50px;
+    position: relative;
+    border-bottom: 1px solid #eee;
+    border-top: unset;
+    bottom: unset;
+    width: 100%;
+}
+
+.post-content .date {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.post-content h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+
+        
