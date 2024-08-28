@@ -1,0 +1,55 @@
+{
+  "projects": [
+    {
+      "name": "Element Robotics",
+      "position": "Robotics Engineering Intern",
+      "date": "June 2024 - August 2024",
+      "description": "Supported ELO2 consortium's Preliminary Design Review for Australian Space Agency's Trailblazer Mission. Developed localisation simulator tool and tested current localisation system and autonomy rover.",
+      "icon": "icons/elero-icon.png"
+    },
+    {
+        "name": "MIT Quantum Computing Hackathon",
+        "position": "Team Member",
+        "date": "June 2024",
+        "description": "Participated in MIT Quantum Computing Hackathon. Developed a quantum circuit simulator in unity visualising the quantum gate transitions of each qubit. Used Qiskit to simulate the quantum circuit and display the results.",
+        "icon": "icons/mit-icon.png"
+    },
+    {
+      "name": "Brown Space Engineering",
+      "position": "Team Member",
+      "date": "January 2024 - Present",
+      "description": "Working on Avionics subsystem for CubeSat. Improving Error Correction Algorithms on the UHF radio chip.",
+      "icon": "icons/bse-icon.png"
+    },
+    {
+      "name": "Brown Formula Racing",
+      "position": "Team Member",
+      "date": "September 2023 - Present",
+      "description": "Integrated Electronic Throttle Control, designed CAD for intake parts, and helped manufacture car components including machining and wire harness assembly.",
+      "icon": "icons/bfr-icon.png"
+    },
+    {
+      "name": "Haileybury",
+      "position": "Latin Language Assistant",
+      "date": "June 2023 - September 2023",
+      "description": "Worked on workflow optimization projects and automatic resource generation. Utilized GPT4 to create automatic Canvas quiz generation system. Assisted in Latin classes for VCE Units 1-4.",
+      "icon": "icons/haileybury-icon.png"
+    }
+  ],
+  "education": [
+    {
+      "name": "Brown University",
+      "degree": "Bachelor of Science in Electrical Engineering",
+      "date": "Expected Graduation: 2027",
+      "description": "Doing coursework in Electrical Engineering, Computer Science, Maths, Physics and Philosophy",
+      "icon": "icons/brown-icon.png"
+    },
+    {
+      "name": "Haileybury College",
+      "degree": "High School Diploma",
+      "date": "Graduated 2022",
+      "description": "Graduated with a 99.70 ATAR (Top 0.3% of graduates in Australia).",
+      "icon": "icons/haileybury-icon.png"
+    }
+  ]
+}
