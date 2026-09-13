@@ -210,3 +210,13 @@ body[data-theme="2"] .profile-portrait{background-color:#784296}
 body[data-theme="2"] #publications .section-banner{background-color:#552e6d}
 body[data-theme="2"] .rail nav a{color:#291532;text-shadow:none}
 body[data-theme="2"] .rail-sign,body[data-theme="2"] .rail-sign b{color:#513531;text-shadow:none}
+
+/* Phone navigation stays flush with the viewport while content scrolls. */
+@media(max-width:440px){
+  html{scroll-padding-top:0}
+  body[data-theme="2"] .rail{top:0;padding:8px 6px 10px;z-index:10;border-radius:0 0 18px}
+  body[data-theme="2"] .rail nav{gap:0}
+  body[data-theme="2"] .rail nav a{min-height:46px;width:50%}
+  body[data-theme="2"] .scroll-section,
+  body[data-theme="2"] #publications{scroll-margin-top:88px}
+}
