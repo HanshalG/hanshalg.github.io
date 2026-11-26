@@ -7,8 +7,58 @@
   <title>Hanshal Goyal</title>
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
   <link rel="icon" type="image/svg+xml" sizes="any" href="assets/favicon.svg?v=serif">
-  <link rel="stylesheet" href="style.css?v=vector-arrows">
-  <script data-goatcounter="https://hanshalg.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <style>
+:root {
+  color-scheme: light;
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Georgia, serif;
+  color: #303630;
+  background: #f1f2eb;
+  --muted: #5b6055;
+  --olive: #505e46;
+  --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.wrap { width: min(38rem, calc(100% - 3rem)); margin-inline: auto; }
+.hero { padding-top: clamp(1rem, 4vw, 3rem); }
+h1, h2, h3, p { margin: 0; }
+h1 { font-size: clamp(2.1rem, 4vw, 2.75rem); font-weight: 400; line-height: 1; letter-spacing: -.035em; }
+.bio { margin-top: .9rem; font-size: 1.125rem; line-height: 1.55; }
+.bio p + p { margin-top: .72em; }
+a { color: inherit; text-decoration-color: #959a88; text-decoration-thickness: 1px; text-underline-offset: .15em; }
+a:hover { color: var(--olive); text-decoration-color: currentColor; }
+a:focus-visible { outline: 2px solid var(--olive); outline-offset: 3px; }
+.social, .meta, footer { font-family: var(--mono); color: var(--muted); }
+.social { display: flex; gap: .45rem 1.15rem; flex-wrap: wrap; margin-top: 1.25rem; font-size: .875rem; }
+.valley {
+  display: block;
+  width: min(112%, calc(100vw - 1rem));
+  height: auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-block: 1.9rem 1.4rem;
+  background: url("data:image/webp;base64,UklGRtYAAABXRUJQVlA4IMoAAABwBQCdASowABAAPu1srlCppiQiqqgBMB2JZQAUYDVBOnITV1n22Mc3TxwaRgHyXHyi9XIcAP7628YxIJPToe/pqofCXtFz0kvRihuUc39lValZHQwAX9iS6uONxiZTpLvVwEOaXJxpXb2ul/6BChQQeBjYEPLMV1jlX3V7u5/cp5hhqnsolPfUkPZaxIKUxwh9oh1ASfTfIfJQojgTB961zetc3YnPNYa6QLNMsH1jseVmhQvPYeBh34v5vhpTkfDs6ZaBGyCKy8AA") center / 100% 100% no-repeat;
+  mix-blend-mode: multiply;
+  mask-image: linear-gradient(to bottom, transparent, black 9%, black 81%, transparent),
+              linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  mask-composite: intersect;
+}
+h2 { font-size: 1.5rem; font-weight: 400; letter-spacing: -.025em; padding-bottom: .65rem; }
+.entries article { padding: 1.05rem 0 1.15rem; border-top: 1px solid #d3d1c5; }
+.meta { font-size: .76rem; letter-spacing: .045em; line-height: 1.5; }
+h3 { margin: .25rem 0; font-size: 1.35rem; line-height: 1.19; letter-spacing: -.018em; font-weight: 400; }
+h3 a { text-decoration: none; }
+h3 a:hover { text-decoration: underline; }
+.publication-arrow { width: .7em; height: .7em; color: var(--olive); }
+.entries p { font-size: 1rem; line-height: 1.4; color: var(--muted); }
+footer { padding: 1.5rem 0 2rem; font-size: .8rem; }
+@media (max-width: 480px) {
+  .bio { font-size: 1.1rem; }
+  .social { font-size: .85rem; }
+}
+</style>
+  <script data-goatcounter="https://hanshalg.goatcounter.com/count" async fetchpriority="low" src="https://gc.zgo.at/count.js"></script>
 </head>
 <body>
 <main id="top" class="wrap">
@@ -17,7 +67,12 @@
     <div class="bio"><p>I’m a Member of Technical Staff at <a href="https://www.mantic.com/" target="_blank" rel="noopener noreferrer">Mantic</a> where I work on post-training. We are on a mission to solve forecasting and radically improve human decision making.</p><p>I briefly worked on sequential Bayesian experimental design research at <a href="https://oatml.cs.ox.ac.uk/" target="_blank" rel="noopener noreferrer">OATML</a> during my visiting student year at <a href="https://www.ox.ac.uk/" target="_blank" rel="noopener noreferrer">Oxford</a>. I am currently on a leave of absence from <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer">Brown</a> where I study Engineering Physics.</p><p>I’m interested in reinforcement learning, Bayesian inference, decision making under uncertainty, and AI for science.</p><p>I grew up in Melbourne, Australia and am currently based in London, UK. I love travelling, music, cricket and learning more about physics, philosophy, history and politics.</p></div>
     <div class="social"><a href="mailto:hanshalgoyal@gmail.com">hanshalgoyal [at] gmail [dot] com</a><a href="https://x.com/hanshalgoyal" target="_blank" rel="noopener noreferrer">X · @hanshalgoyal</a><a href="https://www.linkedin.com/in/hanshal-goyal-54bba8262/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
   </section>
-  <img class="valley" src="assets/alpine-watercolor.jpg" width="1440" height="480" alt="Watercolor of an alpine valley with wildflowers and wooden chalets beneath lavender peaks.">
+  <picture>
+    <source type="image/webp"
+            srcset="assets/alpine-480.webp 480w, assets/alpine-768.webp 768w, assets/alpine-1152.webp 1152w, assets/alpine-1440.webp 1440w"
+            sizes="min(42.56rem, calc(112vw - 3.36rem), calc(100vw - 1rem))">
+    <img class="valley" fetchpriority="high" src="assets/alpine-watercolor.jpg" width="1440" height="480" alt="Watercolor of an alpine valley with wildflowers and wooden chalets beneath lavender peaks.">
+  </picture>
   <section id="publications" class="chapter papers"><div class="label"><h2>Publications</h2></div><div class="entries">
 <article><div class="meta">2026 &nbsp; THINKING MACHINES LAB</div><h3><a href="https://thinkingmachines.ai/news/training-a-scalable-forecasting-agent/" target="_blank" rel="noopener noreferrer">Training a Scalable Forecasting Agent&nbsp;<svg class="publication-arrow" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M2 14 13 3M7 3h6v6"/></svg></a></h3><p>The Mantic team in collaboration with Thinking Machines</p></article>
 <article><div class="meta">2026 &nbsp; MANTIC BLOG</div><h3><a href="https://blog.mantic.com/p/black-october-and-the-future-of-cybersecurity" target="_blank" rel="noopener noreferrer">‘Black October’ and the future of cybersecurity&nbsp;<svg class="publication-arrow" aria-hidden="true" focusable="false" viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M2 14 13 3M7 3h6v6"/></svg></a></h3><p><strong>H. Goyal</strong> and Mantic</p></article>
